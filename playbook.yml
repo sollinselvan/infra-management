@@ -1,0 +1,15 @@
+- name: Copy file with owner and permissions
+  copy:
+    src: /etc/ntp.conf
+    dest: /etc/ntp.conf
+    owner: root
+    group: root
+    mode: '0644'
+
+- name: Copy file with owner and permissions
+  copy:
+    src: /etc/ntp/keys
+    dest: /etc/ntp/keys
+    owner: root
+    group: root
+    mode: '0600'
